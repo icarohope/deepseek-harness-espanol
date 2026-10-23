@@ -53,7 +53,7 @@ cat > "$COMMAND" <<'HEADER'
 #!/bin/sh
 # Instalador de «Español (Latinoamérica)» para DeepSeek Harness.
 #
-# Doble clic para instalar el paquete de idioma en este Mac. No necesita
+# Solo macOS. Doble clic para instalar el paquete de idioma en este Mac. No necesita
 # conexión: todo el plugin viaja dentro de este archivo.
 #
 # Si macOS lo bloquea por provenir de otro equipo: clic derecho → Abrir, o
@@ -97,6 +97,10 @@ cat > "$DIST/LEER-PRIMERO.md" <<'GUIDE'
 Este paquete traduce toda la interfaz de DeepSeek Harness al español
 latinoamericano: **63 espacios de nombres y 2 901 textos**.
 
+> **El instalador es para macOS.** El plugin en sí funciona en cualquier sistema donde
+> corra DeepSeek Harness: en Windows o Linux instala `dsh-locale-es-<versión>.tgz` desde
+> **Plugins**.
+
 ## Antes de empezar
 
 1. Instala DeepSeek Harness en esta Mac y **ábrelo una vez**. Eso crea su perfil
@@ -104,7 +108,7 @@ latinoamericano: **63 espacios de nombres y 2 901 textos**.
    registrar el plugin.
 2. Cierra la app (opcional, pero recomendable).
 
-## Forma 1 — instalador de un solo archivo (recomendada)
+## Forma 1 — instalador de un solo archivo (macOS, recomendada)
 
 1. Copia **`Instalar-Espanol-DSH.command`** a esta Mac (AirDrop, iCloud, USB…).
 2. Doble clic. Si macOS dice que no puede abrirlo porque proviene de otro

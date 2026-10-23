@@ -1,7 +1,7 @@
 {
   "name": "dsh-locale-es",
   "version": "1.0.0",
-  "description": "Traducción al español latinoamericano de la interfaz de DeepSeek Harness",
+  "description": "Traducción al español latinoamericano (es-419) de la interfaz de DeepSeek Harness. Plugin multiplataforma con instalador para macOS.",
   "license": "MIT",
   "author": "Raul Guerra",
   "repository": {
