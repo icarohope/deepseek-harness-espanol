@@ -1,0 +1,54 @@
+{
+  "name": "dsh-locale-es",
+  "version": "1.0.0",
+  "description": "Traducción al español latinoamericano de la interfaz de DeepSeek Harness",
+  "license": "MIT",
+  "author": "Icaro Hope",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "locale",
+    "language-pack",
+    "spanish",
+    "es-419",
+    "latinoamerica",
+    "translation"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs --all",
+    "qa": "node scripts/qa.mjs",
+    "dist": "sh scripts/make-dist.sh",
+    "verify": "sh scripts/install.sh --check"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

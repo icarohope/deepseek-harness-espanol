@@ -1,0 +1,16 @@
+{
+  "title": "Shell",
+  "description": "Limita cuánto tiempo puede ejecutarse cada comando y cuánta salida puede generar.",
+  "timeoutMs": "Tiempo de espera del comando (ms)",
+  "timeoutMsHint": "Cuánto tiempo puede ejecutarse un comando antes de que se termine.",
+  "maxOutputBytes": "Límite de salida por flujo (bytes)",
+  "maxOutputBytesHint": "La salida que supere este límite se vuelca en un archivo temporal en lugar de perderse.",
+  "overridden": "Modificado",
+  "reset": "Restablecer el valor predeterminado",
+  "readOnly": "Esta implementación guarda los ajustes en modo de solo lectura.",
+  "unavailable": "Este plugin no está cargado, así que no se puede configurar en este momento.",
+  "save": "Guardar",
+  "saving": "Guardando…",
+  "saveFailed": "La implementación no aceptó estos valores; quedaron para que los corrijas.",
+  "invalidNumber": "Escribe un número o déjalo en blanco para usar el valor predeterminado."
+}

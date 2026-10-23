@@ -1,0 +1,28 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  translations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Cada clave del diccionario inglés debe existir en español, con los
+      # mismos marcadores {…} y sin valores vacíos.
+      - name: Validate dictionaries
+        run: node scripts/check.mjs --all
+
+      # El bundle servido por DSH se genera a partir de los JSON; si alguien
+      # edita una traducción y olvida reconstruirlo, este paso lo detecta.
+      - name: Bundle is up to date
+        run: |
+          node scripts/build.mjs
+          git diff --exit-code -- lib/client.js

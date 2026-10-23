@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Controles de zoom",
+  "zoomMenu": "Elegir el zoom",
+  "zoomOut": "Alejar",
+  "zoomIn": "Acercar",
+  "zoomFitWidth": "Ajustar al ancho",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "Página {page} del PDF",
+  "loading": "Renderizando el documento…",
+  "rendering": "Renderizando la página…",
+  "failed": "No se puede mostrar el PDF: {message}",
+  "password": "Este PDF requiere una contraseña; no se admiten vistas previas protegidas con contraseña.",
+  "workerFailed": "El proceso de renderizado del PDF no pudo continuar. Vuelve a intentarlo.",
+  "unsupported": "La vista previa del PDF requiere el contenido completo del archivo.",
+  "retry": "Reintentar"
+}

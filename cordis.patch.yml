@@ -1,0 +1,5 @@
+# Bundle layer for dsh-locale-es: one row that mounts the translation plugin.
+# The client half registers the `es-419` language pack and its dictionaries.
+- insert:
+    - id: locale-es
+      name: 'dsh-locale-es'

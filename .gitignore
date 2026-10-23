@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Artefactos de distribución (se generan con scripts/make-dist.sh)
+dist/
+
+# Dependencias y respaldos locales
+node_modules/
+*.bak-*
+*.log

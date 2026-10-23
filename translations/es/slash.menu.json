@@ -1,0 +1,11 @@
+{
+  "command": "Comandos",
+  "skill": "Habilidades",
+  "subagent": "Subagentes",
+  "loading": "Cargando…",
+  "drill.aria": "Explorar carpeta",
+  "drill.hint": "Explorar carpeta",
+  "drill.key": "Tab",
+  "crumbs.aria": "Navegación por carpetas",
+  "suggestions.aria": "Sugerencias de activación"
+}
