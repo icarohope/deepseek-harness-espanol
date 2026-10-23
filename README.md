@@ -14,11 +14,15 @@ que el selector de idioma de DSH lo trata como un idioma más.
 - La preferencia se guarda en el perfil (`locale.preference`), así que sobrevive a
   reinicios y afecta a todas las ventanas de esta instalación.
 
+## Descargar
+
+[Última versión](https://github.com/icarohope/deepseek-harness-espanol/releases/latest) · [Repositorio](https://github.com/icarohope/deepseek-harness-espanol)
+
 ## Instalación
 
 ### La forma rápida (un solo archivo)
 
-`dist/Instalar Español DSH.command` contiene el plugin completo. Cópialo a la Mac de
+`dist/Instalar-Espanol-DSH.command` contiene el plugin completo. Cópialo a la Mac de
 destino, doble clic y listo: no necesita conexión ni permisos de administrador. Si macOS
 lo bloquea por venir de otro equipo, clic derecho → **Abrir**.
 
@@ -66,7 +70,7 @@ Genera en `dist/`:
 
 | Archivo | Para qué |
 |---|---|
-| `Instalar Español DSH.command` | instalador de un solo archivo, doble clic |
+| `Instalar-Espanol-DSH.command` | instalador de un solo archivo, doble clic |
 | `dsh-locale-es-1.0.0.tgz` | paquete npm para la página Plugins |
 | `dsh-locale-es-1.0.0.zip` | carpeta completa, para instalar con `sh scripts/install.sh` |
 | `LEER-PRIMERO.md` | instrucciones para la Mac de destino |

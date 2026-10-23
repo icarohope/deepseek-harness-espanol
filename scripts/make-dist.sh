@@ -3,7 +3,7 @@
 #
 #   dsh-locale-es-<versión>.tgz      paquete npm (para la página Plugins de DSH)
 #   dsh-locale-es-<versión>.zip      paquete completo (carpeta con instalador)
-#   Instalar Español DSH.command     instalador de un solo archivo, doble clic
+#   Instalar-Espanol-DSH.command     instalador de un solo archivo, doble clic
 #   LEER-PRIMERO.md                  instrucciones para la otra Mac
 #   SHA256SUMS.txt                   sumas de verificación
 #
@@ -47,7 +47,7 @@ cp -R "$STAGE/package" "$STAGE/zip/$NAME"
 echo "→ generando el instalador de un solo archivo"
 PAYLOAD="$STAGE/payload.tgz"
 COPYFILE_DISABLE=1 tar -czf "$PAYLOAD" -C "$STAGE" package
-COMMAND="$DIST/Instalar Español DSH.command"
+COMMAND="$DIST/Instalar-Espanol-DSH.command"
 
 cat > "$COMMAND" <<'HEADER'
 #!/bin/sh
@@ -57,7 +57,7 @@ cat > "$COMMAND" <<'HEADER'
 # conexión: todo el plugin viaja dentro de este archivo.
 #
 # Si macOS lo bloquea por provenir de otro equipo: clic derecho → Abrir, o
-#   xattr -d com.apple.quarantine "Instalar Español DSH.command"
+#   xattr -d com.apple.quarantine "Instalar-Espanol-DSH.command"
 set -eu
 
 PAYLOAD_LINE=$(awk '/^__PAYLOAD_BELOW__$/{print NR + 1; exit}' "$0")
@@ -106,14 +106,14 @@ latinoamericano: **63 espacios de nombres y 2 901 textos**.
 
 ## Forma 1 — instalador de un solo archivo (recomendada)
 
-1. Copia **`Instalar Español DSH.command`** a esta Mac (AirDrop, iCloud, USB…).
+1. Copia **`Instalar-Espanol-DSH.command`** a esta Mac (AirDrop, iCloud, USB…).
 2. Doble clic. Si macOS dice que no puede abrirlo porque proviene de otro
    equipo: **clic derecho → Abrir**, o abre Terminal y ejecuta:
 
    ```sh
-   xattr -d com.apple.quarantine "Instalar Español DSH.command"
-   chmod +x "Instalar Español DSH.command"
-   ./"Instalar Español DSH.command"
+   xattr -d com.apple.quarantine "Instalar-Espanol-DSH.command"
+   chmod +x "Instalar-Espanol-DSH.command"
+   ./"Instalar-Espanol-DSH.command"
    ```
 
 3. Si la app estaba abierta, recarga la interfaz con **⌘R**. Si algo sigue en

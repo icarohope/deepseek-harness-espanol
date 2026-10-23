@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "Traducción al español latinoamericano de la interfaz de DeepSeek Harness",
   "license": "MIT",
-  "author": "Icaro Hope",
+  "author": "Raul Guerra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarohope/deepseek-harness-espanol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/icarohope/deepseek-harness-espanol/issues"
+  },
+  "homepage": "https://github.com/icarohope/deepseek-harness-espanol#readme",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
