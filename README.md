@@ -1,5 +1,7 @@
 # dsh-locale-es
 
+[![check](https://github.com/icarohope/deepseek-harness-espanol/actions/workflows/check.yml/badge.svg)](https://github.com/icarohope/deepseek-harness-espanol/actions/workflows/check.yml)
+
 Traducción al **español latinoamericano (es-419)** de toda la interfaz de
 [DeepSeek Harness](https://harness.deepseek.com). Es un plugin de cliente: registra un
 paquete de idioma y un diccionario por cada espacio de nombres de la interfaz, de modo
@@ -153,6 +155,19 @@ ctx.locale.register('chat', 'es-419', { /* … */ })
 
 Como el idioma declara `fallback: 'en'`, una clave ausente se resuelve en inglés antes
 de mostrar la clave.
+
+## Integración continua
+
+El flujo [`.github/workflows/check.yml`](.github/workflows/check.yml) se ejecuta en cada
+push a `main` y en cada pull request:
+
+1. `node scripts/check.mjs --all` — cada clave inglesa existe en español, con los mismos
+   marcadores `{…}` y sin valores vacíos.
+2. `node scripts/build.mjs` y `git diff --exit-code lib/client.js` — el bundle publicado
+   está reconstruido a partir de los JSON.
+
+Atrapa los dos errores típicos: un marcador `{…}` alterado y una traducción editada sin
+regenerar el bundle.
 
 ## Editar una traducción
 
